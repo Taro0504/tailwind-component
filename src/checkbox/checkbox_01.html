@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Checkbox_01</title>
+</head>
+<body>
+  <div class="mx-auto max-w-lg space-y-3">
+    <div class="flex items-center space-x-2">
+      <input 
+        id="example1"
+        type="checkbox" 
+        class="
+          rounded
+          border-gray-300
+          shadow-sm
+          focus:border-blue-300
+          focus:ring
+          focus:ring-blue-200 
+          focus:ring-opacity-50
+          focus:ring-offset-0
+          "
+      >
+      <label class="text-sm font-medium text-gray-700">Default</label>
+    </div>
+    <div class="flex items-center space-x-2">
+      <input 
+        id="example2"
+        type="checkbox" 
+        class="
+          rounded 
+          border-gray-300 
+          shadow-sm
+          focus:border-blue-300
+          focus:ring
+          focus:ring-blue-200
+          focus:ring-opacity-50
+          focus:ring-offset-0
+        "
+      >
+      <label for="example2" class="text-sm font-medium text-gray-700">Checked</label>
+    </div>
+    <div class="flex items-center space-x-2">
+      <input 
+        id="example3"
+        type="checkbox"
+        class="
+          border-gray-300
+          focus:border-blue-300
+          rounded
+          shadow-sm
+          focus:ring
+          focus:ring-blue-200
+          focus:ring-opacity-50
+          focus:ring-offset-0
+        "
+      >
+      <label class="text-sm font-medium text-gray-700">Indeterminate</label>
+    </div>
+  </div>
+  <script>
+    document.getElementById("example3").indeterminate = true;
+  </script>
+</body>
+</html>

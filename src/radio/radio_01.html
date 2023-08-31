@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Radio_01</title>
+</head>
+<body>
+  <div class="mx-auto space-y-3 pt-3 max-w-lg">
+    <div class="flex items-center space-x-2">
+      <input type="radio" 
+        class="
+          w-4
+          h-4
+          rounded-full
+          border-gray-300
+          text-blue-600
+          shadow-sm
+          focus:border-blue-300
+          focus:ring
+          focus:ring-blue-200
+          focus:ring-opacity-50
+          focus:ring-offset-0
+        " 
+      >
+      <label for="default" class="text-sm font-medium text-gray-700">Default</label>
+    </div>
+    <div class="flex items-center space-x-2">
+      <input type="radio" 
+      class="
+        w-4
+        h-4
+        rounded-full
+        border-gray-300
+        text-blue-600
+        checked:bg-blue-600
+      " 
+      >
+      <label for="checked" class="text-sm font-medium text-gray-700">Checked</label>
+    </div>
+  </div>
+</body>
+</html>
